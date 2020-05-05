@@ -1,0 +1,3 @@
+python jumpcutter.py --input_file auto_2.mp4 --sounded_speed 1 --silent_speed 999999 --frame_margin 2 --frame_rate 60
+
+python extract.py --input_file ./1.mp4 --frame_rate 30
