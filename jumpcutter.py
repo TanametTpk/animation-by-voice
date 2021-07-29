@@ -25,7 +25,7 @@ def str2bool(v):
 
 def copyTalkFile(outputFrame, isTalk=False, frame_no=0, action=0, isLoop=True):
     state = "ready"
-    if (isTalk):
+    if isTalk:
         state = "talk"
     actions = glob.glob('character/' + state + '/*')
 
@@ -196,7 +196,7 @@ for i in range(audioFrameCount):
     start = int(max(0,i-FRAME_SPREADAGE))
     end = int(min(audioFrameCount,i+1+FRAME_SPREADAGE))
     shouldIncludeFrame[i] = np.max(hasLoudAudio[start:end])
-
+    # print(shouldIncludeFrame[i])
     # Did we flip?
     if (i >= 1 and shouldIncludeFrame[i] != shouldIncludeFrame[i-1]):
         chunks.append([chunks[-1][1],i,shouldIncludeFrame[i-1]])
@@ -255,6 +255,7 @@ for chunk in chunks:
         else:
             frame_no += 1
 
+        # print(chunk)
         action = copyTalkFile(outputFrame, chunk[2], frame_no, action, ANIMATE_LOOP)
         prev_class = chunk[2]
         

@@ -18,12 +18,11 @@ python extract.py --input_file <input_path> --frame_rate <your_vdo_frame_rate>
 - เวลา extract ควรจะเรียง action ตามตัวเลข หรือ อะไรก็ตามที่ทำให้ file เรียง frame ได้ถูก ไม่งั้น animation อาจผิดได้
 
 ## For non programmer / คนที่ไม่ใช้โปรแกรมเมอร์ หรือ อ่านโค้ดไม่ออก
-- นี้คือภาษา python ปกติแล้วในคอมของคุณไม่มีต้องลงก่อน
-- เวลาลง python ให้ดีที่สุดคือลง anaconda
-- นอกจากนี้คุณต้องมี ffmpeg ไปโหลดมาด้วยมันฟรี
-- จากนั้นใน เครื่องคุณจะต้องมี anaconda prompt แล้วกดใช้
-- ย้ายไปที่ folder ที่เก็บไฟล์นี้
-- ถ้าไม่รู้ให้ copy path folder มาใส่แล้วเขียนว่า "cd <path folder ของคุณ>"
-- แต่ถ้าอยู่คนละ drive ให้ใส่ drive ก่อน เช่น อยู่drive f ให้ใส่ว่า "f:" แล้วทำตามข้อที่แล้ว
-- เมื่ออยู่ใน folder ที่ถูกแล้วลง modules โดยพิมพ์ "pip install -f ./requirements.txt"
-- จากนั้นก็ใช้คำสั่งตามด้านบน
+- โหลด python 3 https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64.exe
+- ลง python ตามนี้ https://phoenixnap.com/kb/how-to-install-python-3-windows
+- ลง ffmpeg ตามนี้ http://blog.gregzaal.com/how-to-install-ffmpeg-on-windows/
+- คลิก install.bat
+- เอาไฟล์ เสียงแปลงเป็น .mp4 ก่อน
+- เอาไฟล์ .mp4 ที่ต้องการทำ animation มาไว้ใน folder นี้(ที่เดียวกับ jumpcutter.py)
+- ลาก ไฟล์เสียง(.mp4) มาใส่ ไฟล์ create-animation-60fps.bat หรือ create-animation-30fps.bat ตาม fps ของไฟล์ .mp4 (ลากเสียงมาทับได้เลย)
+- จะได้ output ชื่อว่า char_talk.mp4
