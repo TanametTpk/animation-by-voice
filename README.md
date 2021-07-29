@@ -23,6 +23,6 @@ python extract.py --input_file <input_path> --frame_rate <your_vdo_frame_rate>
 - ลง ffmpeg ตามนี้ http://blog.gregzaal.com/how-to-install-ffmpeg-on-windows/
 - คลิก install.bat
 - เอาไฟล์ เสียงแปลงเป็น .mp4 ก่อน
-- เอาไฟล์ .mp4 ที่ต้องการทำ animation มาไว้ใน folder นี้(ที่เดียวกับ jumpcutter.py)
+- เอาไฟล์ .mp4 ที่ต้องการทำ animation มาไว้ใน folder นี้(ที่เดียวกับ jumpcutter.py) (ถ้า .mp4 อยู่คนละ folder จะทำงานไม่ได้)
 - ลาก ไฟล์เสียง(.mp4) มาใส่ ไฟล์ create-animation-60fps.bat หรือ create-animation-30fps.bat ตาม fps ของไฟล์ .mp4 (ลากเสียงมาทับได้เลย)
 - จะได้ output ชื่อว่า char_talk.mp4
